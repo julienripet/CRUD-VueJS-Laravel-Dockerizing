@@ -6,6 +6,7 @@ services:
       - 8080:8080
     volumes:
       - ./CRUD-VueJS-Laravel-Frontend:/app
+      - ./CRUD-VueJS-Laravel-Frontend/node_modules:/app/node_modules
 
   
   mariadb:

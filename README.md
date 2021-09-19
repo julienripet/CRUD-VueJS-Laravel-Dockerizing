@@ -8,7 +8,7 @@ L'application en elle-même est un test technique, servant à démontrer ma capa
 
 ## Mise en place
 
-Pour mettre en place l'application en utilisant ce repo, vous aurez besoin du terminal de votre choix, de [Git](https://git-scm.com/downloads) et de [Docker Compose](https://docs.docker.com/compose/install/).
+Pour mettre en place l'application en utilisant ce repo, vous aurez besoin du terminal de votre choix, de [Git](https://git-scm.com/downloads), de [Docker Compose](https://docs.docker.com/compose/install/), et de [Node.js](https://nodejs.org/en/) .
 
 Commencez par cloner ce repo en entrant la commande suivante dans votre terminal:
 
@@ -29,6 +29,12 @@ Une fois les deux repos créés, vous pouvez lancez les containers Docker avec l
 
 ```bash
 docker compose up -d
+```
+
+Dû à un problème avec le CLI de Vue.js v3, vous devrez forcer l'installation des modules en entrant la commande:
+
+```bash
+cd CRUD-VueJS-Laravel-Frontend && npm i
 ```
 
 Après cette étape, vous devriez pouvoir ouvrir [le site](http://localhost:8080) dans votre navigateur.
