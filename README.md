@@ -37,8 +37,19 @@ A cause d'un problème avec le CLI de Vue.js v3, vous devrez forcer l'installati
 cd CRUD-VueJS-Laravel-Frontend && npm i
 ```
 
+Revenez dansle dossier parent, et installez ensuite les packets de Laravel avec :
+
+```bash
+docker exec crud-vuejs-laravel-dockerizing_backend_1 composer install
+```
+
 Après cette étape, vous devriez pouvoir ouvrir [le site](http://localhost:8080) dans votre navigateur.
 
+En cas d'erreur avec le backend, supprimer le dossier `vendor`, puis relancer le container résoudra souvent le problème.
+Similairement, en cas d'erreur avecle frontend, supprimer le dossier `node_modules`, puis réinstaller les packages avec `npm install`.
+
+Si des erreurs persistent, n'hésitez pas à me contacter!
+ 
 ## Seeding de la base de données
 
 Pour rendre les tests plus simples, un Seeder Laravel a été créé, afin de remplir la base de données avec des infos factices.
